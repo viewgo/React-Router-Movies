@@ -19,7 +19,17 @@ a {
   position: relative;
   margin: 1rem auto;
 }
+.movie-card:hover{
+  cursor: default;
+}
 
+.pad{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
@@ -29,7 +39,7 @@ a {
   background-color: #fff;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
+  /* padding: 1rem; */
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
@@ -38,10 +48,20 @@ a {
   align-items: flex-start;
   justify-content: space-between;
 }
+.saved-list:hover{
+  cursor: default;
+}
 
 .saved-movies-list{
   display: flex;
   flex-direction: column;
+}
+
+.movie-list{
+  position: relative;
+  width: 75%;
+  margin: 1rem auto;
+  
 }
 
 .saved-list h3 {
@@ -70,8 +90,9 @@ a {
   background-color: lightseagreen;
 }
 .save-button:hover {
-  background-color: green;
+  background-color: rgb(0, 124, 128);
   color: white;
+  cursor: pointer;
 }
 
 .home-button {

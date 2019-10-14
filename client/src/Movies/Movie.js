@@ -34,9 +34,11 @@ const Movie = props => {
   else {
     const { title, director, metascore, stars } = movie;
 
+    console.log(movie);
+
     return (
       <div className="save-wrapper">
-        <MovieCard movie={movie}/>
+        <MovieCard isDetailed={true} movie={movie}/>
         <div className="save-button" onClick={e => props.addToSavedList(movie)}>Save</div>
       </div>
     );
