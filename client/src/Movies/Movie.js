@@ -24,22 +24,22 @@ const Movie = props => {
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
-    addToSavedList(movie)
-  }
+    addToSavedList(movie);
+  };
 
   if (!movie) {
     return <div>Loading movie information...</div>;
-  } 
-
-  else {
+  } else {
     const { title, director, metascore, stars } = movie;
 
     console.log(movie);
 
     return (
       <div className="save-wrapper">
-        <MovieCard isDetailed={true} movie={movie}/>
-        <div className="save-button" onClick={e => props.addToSavedList(movie)}>Save</div>
+        <MovieCard isDetailed={true} movie={movie} />
+        <div className="save-button" onClick={e => props.addToSavedList(movie)}>
+          Save
+        </div>
       </div>
     );
   }

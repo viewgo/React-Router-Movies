@@ -33,9 +33,7 @@ const MovieList = props => {
 
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
-  return (
-    <MovieCard isDetailed={false} movie={movie}/>
-  );
+  return <MovieCard isDetailed={false} movie={movie} />;
 }
 
 export default MovieList;
